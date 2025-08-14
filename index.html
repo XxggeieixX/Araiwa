@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        .tab-pane .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .navbar .dropdown-menu {
+            background-color: #333333;
+            border: none;
+        }
+
+        .navbar .dropdown-menu .dropdown-item {
+            color: #fff;
+        }
+
+        .navbar .dropdown-menu .dropdown-item:hover,
+        .navbar .dropdown-menu .dropdown-item:focus,
+        .navbar .dropdown-menu .dropdown-item.active {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .navbar .nav-link {
+            color: #fff;
+        }
+
+        .navbar .nav-link.active,
+        .navbar .nav-link.active:focus,
+        .navbar .nav-link.active:hover {
+            background-color: #fff;
+            color: #f57400 !important;
+            border-top: 4px solid #f57400;
+            font-weight: bold;
+        }
+
+        .navbar .nav-link {
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .navbar .nav-link:not(.active):hover {
+            background-color: #f5f5f5;
+            color: #f57400 !important;
+        }
+
+        .footer-link {
+            color: #fff;
+            text-decoration: underline;
+            display: block;
+            margin-bottom: 4px;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: #f57400;
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            margin: 0 4px;
+            background: none;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            color: #fff;
+            text-align: center;
+            line-height: 32px;
+            font-size: 1.3rem;
+            transition: background 0.2s, color 0.2s, border 0.2s;
+        }
+
+        .footer-social:hover {
+            background: #f57400;
+            color: #fff;
+            border-color: #f57400;
+            text-decoration: none;
+        }
+
+        @media (max-width: 767px) {
+            footer .text-md-center {
+                text-align: left !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="py-2 px-0" style="background-color: #f57400;">
+        <div class="container">
+            <header class="py-2 px-0" style="background-color: #f57400;">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="d-flex align-items-center ms-3">
+                        <img src="kmutnb_index_Logo.png" alt="KMUTNB Logo" style="height:80px;">
+                        <div class="ms-3 text-white">
+                            <div style="font-size: 1.5rem; font-weight: bold;">
+                                มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</div>
+                            <div style="font-size: 1rem;">KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-end me-3">
+                        <div class="mb-2 text-white small">
+                            เปลี่ยนการแสดงผล :
+                            <button class="btn btn-dark btn-sm rounded-circle px-2 py-0">A</button>
+                            <button class="btn btn-secondary btn-sm rounded-circle px-2 py-0">A</button>
+                            <button class="btn btn-light btn-sm rounded-circle px-2 py-0">A</button>
+                            <button class="btn btn-dark btn-sm px-2 py-0">C</button>
+                            <button class="btn btn-light btn-sm px-2 py-0">C</button>
+                            <button class="btn btn-dark btn-sm px-2 py-0">C</button>
+                            <img src="https://flagcdn.com/th.svg" alt="TH" style="height:18px;vertical-align:middle;">
+                            <span class="dropdown-toggle"></span>
+                        </div>
+                        <div class="d-flex align-items-center text-white">
+                            <span class="me-2"><i class="bi bi-person-fill"></i> นักศึกษา</span> |
+                            <span class="mx-2"><i class="bi bi-mortarboard-fill"></i> ศิษย์เก่า</span> |
+                            <span class="ms-2"><i class="bi bi-people-fill"></i> บุคลากร</span>
+                            <form class="ms-3" role="search" style="display:inline-block;">
+                                <input class="form-control form-control-sm" type="search" placeholder=""
+                                    aria-label="Search" style="width:150px;display:inline-block;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #333333">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg" style="background-color: #333333">
+                <div class="container-fluid px-0">
+                    <ul class="navbar-nav d-flex align-items-center w-100" style="width: 100%;">
+                        <li class="nav-item px-3 border-end border-secondary">
+                            <a class="nav-link text-white" href="#">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item px-3 border-end border-secondary dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">เกี่ยวกับ มจพ.</a>
+                            <ul class="text-white dropdown-menu" style="background-color: #333333;">
+                                <li><a class="dropdown-item " href="#">ประวัติ</a></li>
+                                <li><a class="dropdown-item" href="#">สัญลักษณ์</a></li>
+                                <li><a class="dropdown-item" href="#">วิสัยทัศน์ / พันธกิจ / สมรรถนะหลัก /
+                                        และค่านิยมร่วม</a></li>
+                                <li><a class="dropdown-item" href="#">โครงสร้างองค์กร</a></li>
+                                <li><a class="dropdown-item" href="#">วิทยาเขต</a></li>
+                                <li><a class="dropdown-item" href="#">คณะผู้บริหาร</a></li>
+                                <li><a class="dropdown-item" href="#">นโยบายมหาวิทยาลัย</a></li>
+                                <li><a class="dropdown-item" href="#">รายงานประจำปี</a></li>
+                                <li><a class="dropdown-item" href="#">วิสัยทัศน์</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3 border-end border-secondary dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">คณะและหน่วยงาน</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">มจพ.กรุงเทพฯ</a></li>
+                                <li><a class="dropdown-item" href="#">มจพ.ปราจีนบุรี</a></li>
+                                <li><a class="dropdown-item" href="#">มจพ.ระยอง</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3 border-end border-secondary dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">รับสมัครนักศึกษา</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ปวช และปริญญาตรี</a></li>
+                                <li><a class="dropdown-item" href="#">ปริญญาโทและปริญญาเอก</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3 border-end border-secondary dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">วิจัยและบริการวิชาการ</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ผลงานวิจัยเด่น</a></li>
+                                <li><a class="dropdown-item" href="#">ฐานข้อมูลนักวิจัย</a></li>
+                                <li><a class="dropdown-item" href="#">วารสารวิชาการ</a></li>
+                                <li><a class="dropdown-item" href="#">งานบริการวิชาการ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3 border-end border-secondary">
+                            <a class="nav-link text-white" href="#">ติดต่อ</a>
+                        </li>
+                        <li class="nav-item px-3 border-end border-secondary dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">ชีวิตในรั้วมหาวิทยาลัย</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">มจพ.กรุงเทพฯ</a></li>
+                                <li><a class="dropdown-item" href="#">มจพ.วิทยาเขต</a></li>
+                                <li><a class="dropdown-item" href="#">มจพ.วิทยาเขต</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3 ms-auto d-flex align-items-center">
+                            <img src="image-removebg-preview(1).png" alt="ITA" style="height:32px;">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="2015rank.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="banner-pink.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="banner-web-01.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="banner-web-02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="banner-web-ผาปา68-01.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="ITA68111.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-tabs me-auto" id="myTab" role="tablist" style="margin-left: 320px;">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active text-dark bi bi-bank2" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">ข่าวมหาวิทยาลัย</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark bi bi-book" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">ข่าวทุนวิจัยฝอบรม</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark bi bi-person-fill" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane " type="button" role="tab"
+                            aria-controls="contact-tab-pane" aria-selected="false">ข่าวนักศึกษา</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark bi bi-book" id="student-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">ข่าวรับสมัครนักศึกษา</button>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    </div>
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image1.jpg" class="card-img-top" alt="TCAS69">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. เปิดรับสมัครนักศึกษาใหม่ ระดับ ปวช.-ปริญญาตรี ปีการศึกษา 2569 (TCAS1-TCAS4)
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. เปิดรับสมัครนักศึกษาใหม่ ระดับ ปวช.-ปริญญาตรี ปีการศึกษา 2569 (TCAS1-TCAS4)
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 06/08/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image2.jpg" class="card-img-top" alt="news2">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. กำหนดทอดผ้าป่าสามัคคี ประจำปี พ.ศ. 2568 ณ วัดเวฬุวันวิหาร (วัดน้อย) 13 ก.ย.
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. กำหนดทอดผ้าป่าสามัคคี ประจำปี พ.ศ. 2568 ณ วัดเวฬุวันวิหาร (วัดน้อย) 13 ก.ย. นี้
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 01/08/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image3.png" class="card-img-top" alt="news3">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. กำหนดขึ้นทะเบียนบัณฑิตและพิธีพระราชทานปริญญาบัตร ประจำปีการศึกษา 2567 (2568)
+                                    &hellip;
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. กำหนดขึ้นทะเบียนบัณฑิตและพิธีพระราชทานปริญญาบัตร ประจำปีการศึกษา 2567 (2568)
+                                    &hellip;
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 15/07/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image4.jpg" class="card-img-top" alt="news4">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    ภาควิชาวิศวกรรมโยธา คณะวิศวกรรมศาสตร์ มจพ. จัดประชุมวิชาการระดับนานาชาติ 20-22 ต.ค.
+                                    นี้
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    ภาควิชาวิศวกรรมโยธา คณะวิศวกรรมศาสตร์ มจพ. จัดประชุมวิชาการระดับนานาชาติ 20-22 ต.ค.
+                                    นี้
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 08/07/2568
+                                </small>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image5.png" class="card-img-top" alt="TCAS69">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    ประกาศมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เรื่อง ความปลอดภัยของอาคารภายใน
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    ประกาศมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เรื่อง ความปลอดภัยของอาคารภายใน ...
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 31/03/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image6.jpg" class="card-img-top" alt="news2">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    โปรดเกล้าฯ ศ.ดร.ธนินทร์ ศิลป์จารุ ดำรงตำแหน่งอธิการบดี มจพ.
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    โปรดเกล้าฯ ศ.ดร.ธนินทร์ ศิลป์จารุ ดำรงตำแหน่งอธิการบดี มจพ.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 26/03/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image7.jpg" class="card-img-top" alt="news3">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    การแอบอ้างเป็นหน่วยงานที่ได้รับอนุญาตให้เป็นตัวแทนของมหาวิทยาลัย
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    การแอบอ้างเป็นหน่วยงานที่ได้รับอนุญาตให้เป็นตัวแทนของมหาวิทยาลัย
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 19/03/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image8.jpg" class="card-img-top" alt="news4">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. ครองอันดับ 2 ต่อเนื่อง ม.ไทย ด้านคุณภาพงานวิจัย ในการจัดอันดับ THE World
+                                    Ranking 2025
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. ครองอันดับ 2 ต่อเนื่อง ม.ไทย ด้านคุณภาพงานวิจัย ในการจัดอันดับ THE World
+                                    Ranking 2025
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 10/10/2567
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image9.jpg" class="card-img-top" alt="TCAS69">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    รางวัล "Highly Cited Awards" การตีพิมพ์เผยแพร่ในวารสาร Defence Technology Impact
+                                    Factor 4.035/Q1 อยู่ในฐานข้อมูล Science Direct ที่...
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    รางวัล "Highly Cited Awards" การตีพิมพ์เผยแพร่ในวารสาร Defence Technology Impact
+                                    Factor 4.035/Q1 อยู่ในฐานข้อมูล Science Direct ที่...
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 13/03/2566
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image10.jpg" class="card-img-top" alt="news2">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. เดินหน้าพัฒนาระบบ KMUTNB - ERP ยกระดับการบริหารจัดการสู่มาตรฐานสากล
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. เดินหน้าพัฒนาระบบ KMUTNB - ERP ยกระดับการบริหารจัดการสู่มาตรฐานสากล
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 13/08/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image11.jpeg" class="card-img-top" alt="news3">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. โชว์ผลงานล้ำด้านหุ่นยนต์ ดาวเทียม ระบบราง เซิร์ฟเวอร์คอมพิวเตอร์
+                                    และกิจกรรมเพื่อความยั่งยืน ในงานอา...
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. โชว์ผลงานล้ำด้านหุ่นยนต์ ดาวเทียม ระบบราง เซิร์ฟเวอร์คอมพิวเตอร์
+                                    และกิจกรรมเพื่อความยั่งยืน ในงานอา...
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 13/08/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image12.jpg" class="card-img-top" alt="news4">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    ภาควิชาวิศวกรรมโยธา คณะวิศวกรรมศาสตร์ มจพ. จัดประชุมวิชาการระดับนานาชาติ 20-22 ต.ค.
+                                    นี้
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    ภาควิชาวิศวกรรมโยธา คณะวิศวกรรมศาสตร์ มจพ. จัดประชุมวิชาการระดับนานาชาติ 20-22 ต.ค.
+                                    นี้
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 08/07/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    <div class="container py-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="อบรม1">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ศูนย์วิจัยและฝึกอบรมฯ (มาถาพพูด) มจพ. จัดโครงการฝึกอบรมเชิงปฏิบัติการหลักสูตร
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ศูนย์วิจัยและฝึกอบรมฯ (มาถาพพูด) มจพ. จัดโครงการฝึกอบรมเชิงปฏิบัติการหลักสูตร “พื้นฐานงานช่างซ่อมท่อก๊าซยานยนต์ที่ใช้ก๊าซอย่างมี...
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 08/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="อบรม2">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            เปิดรับข้อเสนอโครงการวิจัย ประกาททุนมูลฐาน (Fundamental Fund : FF) ประจำปีงบประมาณ
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เปิดรับข้อเสนอโครงการวิจัย ประเภทงานมูลฐาน (Fundamental Fund : FF)
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 06/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย1">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์การจัดสัมมนาพิเศษ Thailand-UK TNE Partnerships for WorldClass Education
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์การจัดสัมมนาพิเศษ Thailand-UK TNE Partnerships for WorldClass Education and Sustainability 7 ส.ค. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 05/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย2">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์ทุนส่งเสริมความร่วมมือการพัฒนาหลักสูตร TNE ระหว่างไทยและ
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์ทุนส่งเสริมความร่วมมือการพัฒนาหลักสูตร TNE ระหว่างไทยและสหราชอาณาจักร หมดเขตรับสมัคร 8 ก.ย. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 05/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย3">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์โครงการ 50 ปี 50 ทุน ศึกษาต่อประเทศจีน ระดับปริญญาตรี ปริญญาโท
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์โครงการ 50 ปี 50 ทุน ศึกษาต่อประเทศจีน ระดับปริญญาตรี ปริญญาโท ปริญญาเอก
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 04/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย4">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์โครงการ UL Research Institute/ ASEAN-U.S. Science Prize for Women 2025
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์โครงการ UL Research Institute/ ASEAN-U.S. Science Prize for Women 2025 หมดเขตรับสมัคร 20 ส.ค. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 04/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย5">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์การสมัครเข้าร่วมแข่งขันในงาน Falling Walls Lab Thailand ครั้งที่ 7 หมดเขต
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์การสมัครเข้าร่วมแข่งขันในงาน Falling Walls Lab Thailand ครั้งที่ 7 หมดเขตรับสมัคร 15 ส.ค. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 04/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย6">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์ทุนสนับสนุนนักวิจัยรุ่นใหม่ในภูมิภาคอาเซียนโดยรัฐบาลออสเตรเลีย หมดเขต
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์ทุนสนับสนุนนักวิจัยรุ่นใหม่ในภูมิภาคอาเซียนโดยรัฐบาลออสเตรเลีย หมดเขตรับสมัคร 11 ส.ค. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 25/07/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+            tabindex="0">
+            <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image1.jpg" class="card-img-top" alt="TCAS69">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. เปิดรับสมัครนักศึกษาใหม่ ระดับ ปวช.-ปริญญาตรี ปีการศึกษา 2569 (TCAS1-TCAS4)
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. เปิดรับสมัครนักศึกษาใหม่ ระดับ ปวช.-ปริญญาตรี ปีการศึกษา 2569 (TCAS1-TCAS4)
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 06/08/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image2.jpg" class="card-img-top" alt="news2">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. กำหนดทอดผ้าป่าสามัคคี ประจำปี พ.ศ. 2568 ณ วัดเวฬุวันวิหาร (วัดน้อย) 13 ก.ย.
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. กำหนดทอดผ้าป่าสามัคคี ประจำปี พ.ศ. 2568 ณ วัดเวฬุวันวิหาร (วัดน้อย) 13 ก.ย. นี้
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 01/08/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image3.png" class="card-img-top" alt="news3">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. กำหนดขึ้นทะเบียนบัณฑิตและพิธีพระราชทานปริญญาบัตร ประจำปีการศึกษา 2567 (2568)
+                                    &hellip;
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. กำหนดขึ้นทะเบียนบัณฑิตและพิธีพระราชทานปริญญาบัตร ประจำปีการศึกษา 2567 (2568)
+                                    &hellip;
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 15/07/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image4.jpg" class="card-img-top" alt="news4">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    ภาควิชาวิศวกรรมโยธา คณะวิศวกรรมศาสตร์ มจพ. จัดประชุมวิชาการระดับนานาชาติ 20-22 ต.ค.
+                                    นี้
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    ภาควิชาวิศวกรรมโยธา คณะวิศวกรรมศาสตร์ มจพ. จัดประชุมวิชาการระดับนานาชาติ 20-22 ต.ค.
+                                    นี้
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 08/07/2568
+                                </small>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image5.png" class="card-img-top" alt="TCAS69">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    ประกาศมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เรื่อง ความปลอดภัยของอาคารภายใน
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    ประกาศมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เรื่อง ความปลอดภัยของอาคารภายใน ...
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 31/03/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image6.jpg" class="card-img-top" alt="news2">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    โปรดเกล้าฯ ศ.ดร.ธนินทร์ ศิลป์จารุ ดำรงตำแหน่งอธิการบดี มจพ.
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    โปรดเกล้าฯ ศ.ดร.ธนินทร์ ศิลป์จารุ ดำรงตำแหน่งอธิการบดี มจพ.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 26/03/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image7.jpg" class="card-img-top" alt="news3">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    การแอบอ้างเป็นหน่วยงานที่ได้รับอนุญาตให้เป็นตัวแทนของมหาวิทยาลัย
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    การแอบอ้างเป็นหน่วยงานที่ได้รับอนุญาตให้เป็นตัวแทนของมหาวิทยาลัย
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 19/03/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image8.jpg" class="card-img-top" alt="news4">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. ครองอันดับ 2 ต่อเนื่อง ม.ไทย ด้านคุณภาพงานวิจัย ในการจัดอันดับ THE World
+                                    Ranking 2025
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. ครองอันดับ 2 ต่อเนื่อง ม.ไทย ด้านคุณภาพงานวิจัย ในการจัดอันดับ THE World
+                                    Ranking 2025
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 10/10/2567
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image9.jpg" class="card-img-top" alt="TCAS69">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    รางวัล "Highly Cited Awards" การตีพิมพ์เผยแพร่ในวารสาร Defence Technology Impact
+                                    Factor 4.035/Q1 อยู่ในฐานข้อมูล Science Direct ที่...
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    รางวัล "Highly Cited Awards" การตีพิมพ์เผยแพร่ในวารสาร Defence Technology Impact
+                                    Factor 4.035/Q1 อยู่ในฐานข้อมูล Science Direct ที่...
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 13/03/2566
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image10.jpg" class="card-img-top" alt="news2">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. เดินหน้าพัฒนาระบบ KMUTNB - ERP ยกระดับการบริหารจัดการสู่มาตรฐานสากล
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. เดินหน้าพัฒนาระบบ KMUTNB - ERP ยกระดับการบริหารจัดการสู่มาตรฐานสากล
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 13/08/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image11.jpeg" class="card-img-top" alt="news3">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    มจพ. โชว์ผลงานล้ำด้านหุ่นยนต์ ดาวเทียม ระบบราง เซิร์ฟเวอร์คอมพิวเตอร์
+                                    และกิจกรรมเพื่อความยั่งยืน ในงานอา...
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    มจพ. โชว์ผลงานล้ำด้านหุ่นยนต์ ดาวเทียม ระบบราง เซิร์ฟเวอร์คอมพิวเตอร์
+                                    และกิจกรรมเพื่อความยั่งยืน ในงานอา...
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 13/08/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <img src="image12.jpg" class="card-img-top" alt="news4">
+                            <div class="card-body">
+                                <p class="card-text" style="color:#f57400; font-weight:bold;">
+                                    ภาควิชาวิศวกรรมโยธา คณะวิศวกรรมศาสตร์ มจพ. จัดประชุมวิชาการระดับนานาชาติ 20-22 ต.ค.
+                                    นี้
+                                </p>
+                                <p class="card-text fw-bold text-dark mb-3">
+                                    ภาควิชาวิศวกรรมโยธา คณะวิศวกรรมศาสตร์ มจพ. จัดประชุมวิชาการระดับนานาชาติ 20-22 ต.ค.
+                                    นี้
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> 08/07/2568
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    <div class="container py-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="อบรม1">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ศูนย์วิจัยและฝึกอบรมฯ (มาถาพพูด) มจพ. จัดโครงการฝึกอบรมเชิงปฏิบัติการหลักสูตร
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ศูนย์วิจัยและฝึกอบรมฯ (มาถาพพูด) มจพ. จัดโครงการฝึกอบรมเชิงปฏิบัติการหลักสูตร “พื้นฐานงานช่างซ่อมท่อก๊าซยานยนต์ที่ใช้ก๊าซอย่างมี...
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 08/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="อบรม2">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            เปิดรับข้อเสนอโครงการวิจัย ประกาททุนมูลฐาน (Fundamental Fund : FF) ประจำปีงบประมาณ
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เปิดรับข้อเสนอโครงการวิจัย ประเภทงานมูลฐาน (Fundamental Fund : FF)
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 06/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย1">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์การจัดสัมมนาพิเศษ Thailand-UK TNE Partnerships for WorldClass Education
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์การจัดสัมมนาพิเศษ Thailand-UK TNE Partnerships for WorldClass Education and Sustainability 7 ส.ค. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 05/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย2">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์ทุนส่งเสริมความร่วมมือการพัฒนาหลักสูตร TNE ระหว่างไทยและ
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์ทุนส่งเสริมความร่วมมือการพัฒนาหลักสูตร TNE ระหว่างไทยและสหราชอาณาจักร หมดเขตรับสมัคร 8 ก.ย. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 05/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย3">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์โครงการ 50 ปี 50 ทุน ศึกษาต่อประเทศจีน ระดับปริญญาตรี ปริญญาโท
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์โครงการ 50 ปี 50 ทุน ศึกษาต่อประเทศจีน ระดับปริญญาตรี ปริญญาโท ปริญญาเอก
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 04/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย4">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์โครงการ UL Research Institute/ ASEAN-U.S. Science Prize for Women 2025
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์โครงการ UL Research Institute/ ASEAN-U.S. Science Prize for Women 2025 หมดเขตรับสมัคร 20 ส.ค. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 04/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย5">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์การสมัครเข้าร่วมแข่งขันในงาน Falling Walls Lab Thailand ครั้งที่ 7 หมดเขต
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์การสมัครเข้าร่วมแข่งขันในงาน Falling Walls Lab Thailand ครั้งที่ 7 หมดเขตรับสมัคร 15 ส.ค. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 04/08/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border">
+                    <img src="kmutnb_index_Logo.png" class="card-img-top" alt="ข่าวทุนวิจัย6">
+                    <div class="card-body">
+                        <p class="card-text" style="color:#f57400; font-weight:bold;">
+                            ประชาสัมพันธ์ทุนสนับสนุนนักวิจัยรุ่นใหม่ในภูมิภาคอาเซียนโดยรัฐบาลออสเตรเลีย หมดเขต
+                        </p>
+                        <p class="card-text fw-bold text-dark mb-3">
+                            ประชาสัมพันธ์ทุนสนับสนุนนักวิจัยรุ่นใหม่ในภูมิภาคอาเซียนโดยรัฐบาลออสเตรเลีย หมดเขตรับสมัคร 11 ส.ค. 68
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar3"></i> 25/07/2568
+                        </small>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+        <footer class="mt-5" style="background:#444; color:#fff; padding:40px 0 0 0; border-top: 2px solid #fff;">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="fw-bold" style="color:#f57400;">อื่นๆ</div>
+                            <ul class="list-unstyled mt-2">
+                                <li><a href="#" class="footer-link">สมัครงาน</a></li>
+                                <li><a href="#" class="footer-link">จัดซื้อจัดจ้าง</a></li>
+                                <li><a href="#" class="footer-link">แผนที่</a></li>
+                                <li><a href="#" class="footer-link">ถาม-ตอบ (Q&amp;A)</a></li>
+                                <li><a href="#" class="footer-link">ติดต่อสอบถาม/เสนอแนะ</a></li>
+                                <li><a href="#" class="footer-link">ร้องเรียนทุจริตและประพฤติมิชอบ</a></li>
+                                <li><a href="#" class="footer-link">ศูนย์ข้อมูลข่าวสารอิเล็กทรอนิกส์ของราชการ มจพ.</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="fw-bold" style="color:#f57400;">ติดต่อ มจพ. กรุงเทพฯ</div>
+                            <ul class="list-unstyled mt-2 small">
+                                <li><i class="bi bi-geo-alt-fill"></i> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ<br>
+                                    1518 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ<br>กรุงเทพฯ 10800
+                                </li>
+                                <li class="mt-2"><i class="bi bi-telephone-fill"></i> โทรศัพท์ : +66 2 555-2000</li>
+                                <li><i class="bi bi-printer-fill"></i> โทรสาร : +66 2 587-4350</li>
+                                <li><i class="bi bi-envelope-fill"></i> อีเมล : contact@op.kmutnb.ac.th</li>
+                            </ul>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="col-md-4 mb-4 text-md-center">
+                            <div class="fw-bold" style="color:#f57400;">ติดตามเราได้ที่</div>
+                            <div class="my-2">
+                                <a href="#" class="footer-social"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="footer-social"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="footer-social"><i class="bi bi-youtube"></i></a>
+                                <a href="#" class="footer-social"><i class="bi bi-tiktok"></i></a>
+                            </div>
+                            <img src="ITA68111.jpg" alt="ITA" style="max-width: 160px; margin-top:10px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center small mt-3 mb-2" style="color:#ccc;">
+                            Copyright © 2018 King Mongkut's University of Technology North Bangkok
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
